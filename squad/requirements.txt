@@ -1,0 +1,10 @@
+boto3
+agent-squad
+aiohttp
+requests
+mcp
+/Users/rmadabusi/workspace/wordware/amazon-bedrock-agent-samples-main/src/InlineAgent/dist/inlineagent-0+unknown-py3-none-any.whl
+rx==3.2.0
+websockets==15.0.1
+aws_sdk_bedrock_runtime
+streamlit

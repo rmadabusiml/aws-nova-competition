@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "BedrockInvokePermissions",
+            "Effect": "Allow",
+            "Action": [
+                "bedrock:InvokeModel",
+                "bedrock:InvokeModelWithResponseStream"
+            ],
+            "Resource": [
+                "arn:aws:bedrock:us-east-1:571166455241:inference-profile/us.amazon.nova-micro-v1:0",
+                "arn:aws:bedrock:us-east-1:571166455241:inference-profile/us.amazon.nova-lite-v1:0",
+                "arn:aws:bedrock:us-east-1::foundation-model/amazon.nova-micro-v1:0",
+                "arn:aws:bedrock:us-east-1::foundation-model/amazon.nova-lite-v1:0"
+            ]
+        },
+        {
+            "Sid": "S3ImageAccess",
+            "Effect": "Allow",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::handsonllms-raghu/wind_turbine/images/*"
+        }
+    ]
+}
